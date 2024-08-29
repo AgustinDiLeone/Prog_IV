@@ -1,1 +1,22 @@
+<h1>
+    Clase 1 - Di Leone
+</h1>
+
+<p> Ingrese una edad: <input [(ngModel)] = "edadUno" /></p>
+<p> Ingrese otra edad: <input [(ngModel)] = "edadDos" /></p>
+
+<p> La primer edad ingresada es ({{edadUno}}) y la segunda es ({{edadDos}})</p>
+
+<p>
+    <button (click)="mostrarDatos()">Calcular</button>
+    <button (click)="limpiarDatos()">Limpiar</button>
+</p>
+
+<div id= "resultado"></div>
+
+<p>
+    <button routerLink="bienvenido">Bienvenido</button>
+    <button routerLink="error">Error</button>
+    <button routerLink="login">Login</button>
+</p>
 <router-outlet />
